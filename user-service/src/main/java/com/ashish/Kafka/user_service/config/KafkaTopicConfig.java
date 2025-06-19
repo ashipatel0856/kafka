@@ -13,9 +13,20 @@ public class KafkaTopicConfig {
     private String KAFKA_USER_RANDOM_TOPIC;
 
 
+    @Value("${kafka.topic.user-created-topic}")
+    private String KAFKA_USER_CREATE_TOPIC;
+
     @Bean
-    public NewTopic topic() {
+    public NewTopic userRandomTopic() {
         return new NewTopic(KAFKA_USER_RANDOM_TOPIC, 3, (short) 1);
 
     }
+
+    @Bean
+    public NewTopic userCreatedTopic() {
+        return new NewTopic(KAFKA_USER_CREATE_TOPIC, 3, (short) 1);
+
+    }
+
+
 }
