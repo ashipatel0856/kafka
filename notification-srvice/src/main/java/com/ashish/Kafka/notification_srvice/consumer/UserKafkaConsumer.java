@@ -1,6 +1,7 @@
 package com.ashish.Kafka.notification_srvice.consumer;
 
-import com.ashish.Kafka.notification_srvice.event.UserCreateEvent;
+
+import com.ashish.Kafka.notification_srvice.user_service.event.UserCreateEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;

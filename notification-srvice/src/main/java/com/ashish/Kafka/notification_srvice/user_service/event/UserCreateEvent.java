@@ -1,4 +1,4 @@
-package com.ashish.Kafka.notification_srvice.event;
+package com.ashish.Kafka.notification_srvice.user_service.event;
 
 import lombok.Data;
 
