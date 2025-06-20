@@ -17,9 +17,9 @@ public class UserService {
 
     private final UserRepository userRepository;
     private final ModelMapper modelMapper;
-    private final KafkaTemplate<Long, User> kafkaTemplate;
+    private final KafkaTemplate<Long, UserCreateEvent> kafkaTemplate;
 
-    public UserService(UserRepository userRepository, ModelMapper modelMapper, KafkaTemplate<Long, User> kafkaTemplate) {
+    public UserService(UserRepository userRepository, ModelMapper modelMapper, KafkaTemplate<Long, UserCreateEvent> kafkaTemplate) {
         this.userRepository = userRepository;
         this.modelMapper = modelMapper;
         this.kafkaTemplate = kafkaTemplate;
